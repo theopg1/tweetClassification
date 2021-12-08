@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API Labels TP</title>
+</head>
+<body>
+
+    <p>Send a sentence to know if it is a hate speech, an offensive language or neither.</p>
+
+    <form action="/" method="POST">
+        <input type="text" name="txt" value={{txt}}>
+        <input type="submit" value="Tester">
+    </form> <br>
+    {% if type != 3 : %}
+        <p>This content is : {{type}}</p>
+    {% endif %}
+</body>
+</html>
